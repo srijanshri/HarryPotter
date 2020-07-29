@@ -1,0 +1,79 @@
+.name path {
+  stroke-width: 10px;
+  fill: transparent;
+  stroke-dasharray: 7890;
+  stroke-dashoffset: -7890;
+}
+
+.name .path-1 {
+    animation: 10s 3s forwards draw-backwards, 3s  42s forwards fill;
+}
+
+.name .path-2 {
+    animation: 10s 7s forwards draw, 3s  42s forwards fill;
+}
+
+.name .path-3 {
+    animation: 10s 9s forwards draw, 3s  42s forwards fill;
+}
+
+.name .path-4 {
+    animation: 10s 13s forwards draw, 3s  42s forwards fill;
+}
+
+.name .path-5 {
+    animation: 10s 20s forwards draw-backwards, 3s  42s forwards fill;
+}
+
+.name .path-6 {
+    animation: 10s 20.6s forwards draw, 3s  42s forwards fill;
+}
+
+.name .path-7 {
+    animation: 10s 23s forwards draw, 3s  42s forwards fill;
+}
+
+.name .path-8 {
+    animation: 10s 26s forwards draw, 3s  42s forwards fill;
+}
+
+.name .path-9 {
+    animation: 10s 29s forwards draw, 3s  42s forwards fill;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes draw-backwards {
+  0% {
+    stroke-dashoffset: -7890;
+  }
+  
+  100% {
+    stroke-dashoffset: -15780;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: -7890;
+  }
+  
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  0% {
+    fill: transparent;
+  }
+  
+  100% {
+    fill: #000;
+  }
+}
